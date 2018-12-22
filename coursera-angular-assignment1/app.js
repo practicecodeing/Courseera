@@ -2,7 +2,10 @@
 (function (){
   'use strict';
   angular.module('myFirstApp', [])
-  .controller('myController', function($scope){
+  .controller('myController', myController);
+
+  myController.$inject = ['$scope'];
+  function myController($scope){
       $scope.items = "";
       $scope.totalitemcount = 0;
       $scope.report = "";
@@ -25,5 +28,5 @@
           count = itemList.split(',').length;
         return count;
       }
-  });
+  }
 })(); /// iife end
