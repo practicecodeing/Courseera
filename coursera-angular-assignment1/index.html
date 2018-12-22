@@ -9,25 +9,17 @@
   </head>
   <body ng-app="myFirstApp">
     <h1>Health Reoprt</h1>
-<div ng-controller="myController">
-  <div>
-Enter items you usually eat for Lunch:
-  </div>
-<div>
-<input type="text" ng-model="items">
-</div>
-<div>
-<button type="button" name="button" ng-click="checkIfHealthy();">Check If Too Much</button>
-</div>
-<div>
-  Items consumed:  {{items}}
-</div>
-<div>
-  Number of Items Consumed :{{totalitemcount}}
-</div>
-<div>
-{{report}}
-</div>
-</div>
+    <div ng-controller="myController">
+        <div> Enter items you usually eat for Lunch:</div>
+        <div>
+            <input type="text" ng-model="items">
+        </div>
+        <div>
+          <button type="button" name="button" ng-click="checkIfHealthy();">Check If Too Much</button>
+        </div>
+        <div> Items consumed:  {{items}} </div>
+        <div> Number of Items Consumed :{{totalitemcount}} </div>
+        <div> {{report}} </div>
+    </div>
   </body>
 </html>
